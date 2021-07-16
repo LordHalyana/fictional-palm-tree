@@ -13,11 +13,7 @@ results = soup.find(id="ResultsContainer")
 job_elements = results.find_all("div", class_="card-content")
 
 
-job_dict = {
-	"Title": "",
-	"Company": "",
-	"Location": ""
-}
+job_dict = {}
 
 df = pd.DataFrame([job_dict])
 
